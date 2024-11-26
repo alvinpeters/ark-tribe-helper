@@ -1,0 +1,31 @@
+[package]
+name = "ark-tribe-helper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Logging, tracing, and error handling
+tracing = { version = "0.1.40", features = ["log"]}
+tracing-subscriber = "0.3.18"
+anyhow = "1.0.93"
+
+# tokio stuff
+tokio = { version = "1.41.1", features = ["rt-multi-thread", "macros"] }
+
+# serde stuff
+serde = "1.0.215"
+serde_json = "1.0.133"
+rkyv = "0.8.9"
+
+# Discord
+serenity = { version = "0.12.4", features = ["interactions_endpoint", "client"]}
+
+# Instant acme implementation
+instant-acme = "0.7.2"
+dotenvy_macro = "0.15.7"
+# FoundationDB key-value store
+foundationdb = { version = "0.9.1", features = ["fdb-7_1"] }
+
+[build-dependencies]
+# Fetch .env variables
+dotenvy_macro = "0.15.7"

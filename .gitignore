@@ -1,0 +1,8 @@
+# JetBrains IDE files
+/.idea
+
+# Rust build artefact
+/target
+
+# dotenv
+.env

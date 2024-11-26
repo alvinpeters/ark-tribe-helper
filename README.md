@@ -1,0 +1,1 @@
+# ARK Tribe Helper Discord Bot
